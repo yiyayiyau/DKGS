@@ -1,0 +1,2 @@
+# DKGS
+Detecte Küchen Gefahrensituationen
