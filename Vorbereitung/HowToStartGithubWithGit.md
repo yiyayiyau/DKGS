@@ -13,10 +13,13 @@
 10. and than **git push dkgs master** It will update this file to **master** branch. But, it is not comfortable if you direckly change the master brach, if you are not sure it is 100% correct. 
 
 11. so you need a sub branch. now you can **git branch b-1.0.0** hier branchname is b-1.0.0
-12. **git checkout b-1.0.0**
-13. **git add README.md**
-14. **git commit -m 'add some informations'**
-15. **git push dkgs b-1.0.0**
+12. **git checkout b-1.0.0** switch to local b-1.0.0
+13. **git add README.md** add file to local b-1.0.0
+14. **git commit -m 'add some informations'** add comments to local b-1.0.0
+15. **git push dkgs b-1.0.0** push file to remote b-1.0.0
+16. **git checkout master** switch local b-1.0.0 to local master
+**git merge b-1.0.0** merge it to local master
+**git push dkgs master** push local master to remote master
 
 Case: you have a old version in your laptop and want update the news from github
 1. open Git Bush Here
