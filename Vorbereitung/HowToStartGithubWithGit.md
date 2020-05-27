@@ -7,20 +7,25 @@
 5. find the Url for the remote. for example hier: **https://github.com/yiyayiyau/DKGS.git** (i create the repositore befor)
 6. create a remote names dkgs(or other names) for the link. **git remote add dkgs https://github.com/yiyayiyau/DKGS.git**
 
-7. options: load all files from the remote to working dir. **git pull dkgs master** hier master means the master branch
-8. if you modify one file in the dir. or you create a new file (or dir.) and want to upload that to the link, for example you modify "README.md", you can **git add README.md** to upload this file to local git
-9. than **git commit -m 'add some informations'**, you write someting to discribtion this modify.
-10. and than **git push dkgs master** It will update this file to **master** branch. But, it is not comfortable if you direckly change the master brach, if you are not sure it is 100% correct. 
+* Download all file form Url
+1. **git pull dkgs master** master is the default branch
 
-11. so you need a sub branch. now you can **git branch b-1.0.0** hier branchname is b-1.0.0
-12. **git checkout b-1.0.0** switch to local b-1.0.0
-13. **git add README.md** add file to local b-1.0.0
-14. **git commit -m 'add some informations'** add comments to local b-1.0.0
-15. **git push dkgs b-1.0.0** push file to remote b-1.0.0
-16. **git checkout master** switch local b-1.0.0 to local master
-**git merge b-1.0.0** merge it to local master
-**git push dkgs master** push local master to remote master
+* If you modify one file and want upload it. For example "README.md"
+1. **git add README.md** to upload this file to local git
+2. **git commit -m 'add some informations'**, you write someting to discribtion this modify.
+3. **git push dkgs master** It will update this file to default branch. But, it is not comfortable if you direckly change the master brach, if you are not sure it is 100% correct. 
 
-Case: you have a old version in your laptop and want update the news from github
-1. open Git Bush Here
-2. git 
+So you need a sub branch. now you can 
+1. **git branch b-1.0.0** hier create a branch with branchname b-1.0.0
+2. **git checkout b-1.0.0** switch to local b-1.0.0
+3. **git add README.md** add file to local b-1.0.0
+4. **git commit -m 'add some informations' b-1.0.0** add comments to local b-1.0.0
+5. **git push dkgs b-1.0.0** push file to remote b-1.0.0
+6. **git checkout master** switch local b-1.0.0 to local master
+7. **git merge b-1.0.0** merge it to local master
+8. **git push dkgs master** push local master to remote master
+
+other cmds:
+**git remote -v** show all remotes
+**git branch -a** show all branchs, incl. local and remote branchs, with * is working branch
+
