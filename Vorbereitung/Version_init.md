@@ -20,3 +20,17 @@ pandas: 1.0.3
 statsmodels: 0.11.1
 sklearn: 0.22.1 
 opencv-contrib-python 4.2.0.34 (Befehl: **conda list opencv**)
+
+
+Erganzung:
+	pip install PIL
+	caffe
+	Spyder
+1 工具清单
+2 安装/更新nvida驱动
+3 安装cuda
+4 安装cudnn
+5 安装Anaconda
+6 安装tensorflow-gpu
+7 安装keras
+8 检验tensorflow+keras环境

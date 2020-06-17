@@ -1,6 +1,6 @@
 # Arbeitspacket:
 1. Daten sammeln(picture) und labeling
-2. Feature extraction
+2. Feature extraction, preprocessing(standardization, feature selection, etc)
 3. Maschine learning alg. probieren: 
 	decision tree,
 	K-nearst/FLANN, Boosting, random for., beyes
