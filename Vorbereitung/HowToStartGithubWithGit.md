@@ -23,7 +23,7 @@ Until now, you have all the same file with the others. Now, image that you have 
 1. In your laptop find the the directory **dkgs** and right click **"Git Bush hier"**
 2. **git pull dkgs master** (look wheather others have changed the same file or same line with your, if yes, it will show it and allow 		you to change it again)
 2. **git add test.txt** (find the changed file test.txt, you might need **cd xxxaFileDirectoryName** or **ls** to list all the files 	in the directory)
-3. **git commit "add say hello command or some discrebtion information"** (give some information about changeing)
+3. **git commit "add say hello command or some discrebtion information"** (give some information about changes)
 4. **git push dkgs master** (push it to your remote)
 5. Now, if you open you GitHub you will find the changed file test.txt is in your Github dkgs reponsitory. Click in the mittle left 	button "new pull request" and "Create pull Request"
 6. Than i will get the pull request and i will check it and add some discribtion about it. If i merge it, it will be added in my 		repository and next time if someone **pull** the reponsitory, he will also get the changed file.
@@ -35,9 +35,8 @@ In Gerneral hier is the moster useful commands right now:
 1. **git pull dkgs master**
 2. **git add xxxx.md** 
 3. **git commit -m 'add some informations'**
-4. **git pull dkgs master** 
-5. **git push dkgs master** 
-6. new pull request in Github
+4. **git push dkgs master** 
+5. new pull request in Github
 Use **git add ...** you can add files and directory also.
 
 ## additional, add sub branch
