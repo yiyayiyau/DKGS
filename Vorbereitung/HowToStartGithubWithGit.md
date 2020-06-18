@@ -29,30 +29,49 @@ Until now, you have all the same file with the others. Now, image that you have 
 6. Than i will get the pull request and i will check it and add some discribtion about it. If i merge it, it will be added in my 		repository and next time if someone **pull** the reponsitory, he will also get the changed file.
 
 ## Create neu Pull Request OR Update Fork 
-### Create neu Pull Request: Wenn du deine Änderung ins DKGS hochladen möchtest
-1. Öffnen Github and find the Fork Repo.
-2. Under "Code" klick "Neu pull Request"
-3. Prüfen "base repository" ist "yiyayiyau/DKGS" und "head repository" ist deine Fork. (default)
-4. Klick "Create pull request" und geben update informations sodass in die Zukunft du kannst erinnern was du gemacht hast
-//5. Klick "merge pull request"
+### Create neu Pull Request: If you want upload your changes to Upstream
+1. Opem Github and find the Fork Repo.
+2. Under "Code" click "Neu pull Request"
+3. Check "base repository" is "yiyayiyau/DKGS" and "head repository" is your Fork. (default)
+4. Click "Create pull request" and give update informations so that in the feature you will not forget what you have done.
 
-### Update Fork: Wenn anderen etwas hochgeladet und du deine Fork update möchtest
-1. Öffnen Github and find the Fork Repo.
-2. Under "Code" klick "Neu pull Request"
-3. Prüfen "base repository" ist deine Fork und "head repository" ist "yiyayiyau/DKGS"
-4. Klick "Create pull request" und geben update informations sodass in die Zukunft du kannst erinnern was du gemacht hast
-5. Klick "merge pull request"
+
+### Update Fork: If other teammate something updates and you want get the neuest Fork
+1. Open Github and find the Fork Repo.
+2. Under "Code" click "Neu pull Request"
+3. Check "base repository" is your Fork und "head repository" is "yiyayiyau/DKGS" (This is different with "Create neu Pull Request")
+4. Click "Create pull request"
+5. Click "merge pull request"
 Until now, you can try on it and hopefully everything is ok for you.
 
-## Andere Möglichekeit: git 
-1. **git remote -v" Prüfen ob du yiyayiyau remote eingefügt hast.
-Wenn du keine remote mit den Link https://github.com/yiyayiyau/DKGS.git hast, dann:
+## Other with git 
+### Create neu Pull Request
+1. **git request-pull -p master yiyayiyau master** -p options, meaning show changes
+
+https://git-scm.com/docs/git-request-pull
+
+--Done
+
+The Upstream can with the commands merge the Request.
+1. git remote add Immo https://....
+2. git fetch Immo master
+3. git diff master Immo/master
+4. git merge Immo/master
+5. git push
+
+### Update Fork
+1. **git remote -v"** Check weather yiyayiyau-remote av..
+If you don't have any romote with this Link https://github.com/yiyayiyau/DKGS.git , than use:
 	* **git add yiyayiyau https://github.com/yiyayiyau/DKGS.git** 
-2. **git pull yiyayiyau master** update und merge in deine local. Das is wie die 2 Befehle zusammen: *git fetch yiyayiyau*  und  *git merge yiyayiyau/master*
-3. **git pull dkgs master** dkgs ist eine remote name, wenn du ein andere remotename hast, bitte dies anstatt. 
-4. **git push** update und merge in deine remote repository.
+2. **git pull yiyayiyau master** update und merge in your local. This is the same as : *git fetch yiyayiyau*  and  *git merge yiyayiyau/master* together.
+3. **git pull dkgs master** dkgs is a remote name, if you have another name, just instatt. 
+4. **git push** update und merge in your remote repository.
 
 
+
+https://zhuanlan.zhihu.com/p/37281534
+
+https://blog.csdn.net/sunny_happy08/article/details/81078163?utm_medium=distribute.pc_relevant.none-task-blog-baidujs-1
 
 In Gerneral hier is the moster useful commands right now:
 1. **git pull dkgs master**
