@@ -1,4 +1,5 @@
 # Timeline Heng Wang
+
 ## 22.Woche(1): Entwurf und Expose(Version 1.0)
 
 25.Mai.2020, Kick-Off Meeting, begin
@@ -51,14 +52,22 @@
 11.Juni.2020,
 12.Juni.2020,
 13.Juni.2020, 
+
 14.Juni.2020, Bilder vorbearbeitung, Literatur--> Protokoll
 
 ## 25.Woche(4): (Bilder vorbearbeiten) ==> Katalog + Test Bild 
 15.Juni.2020, Expose Deadline, Expose abgeben, zwischenpräsentationstermin Abgeben
-
 16.Juni.2020,
 
-17.Juni.2020,
+17.Juni.2020, Vorbereitung des Bilders angefangen, 200 Bilder
+18.Juni.2020, Verteilung des 1040Bilder
+	* 1_0-1_207 			-Heng
+	* 1_208-1_415			-Ruojun
+	* 1_416-1_517+2_0-2_105	-Huiqi
+	* 2_106-2_313			-Ahmad
+	* 2_314-2_520			-Christop
+
+19.Juni.2020, Treffen mit Betreuer, 
 
 
 
@@ -147,56 +156,6 @@ Plattforms probieren. und
 
 
 
-
-\ganttset{calendar week text={\currentweek}}
-%\pgfcalendarmonthshortname{\startmonth}~\startday%
-}%
-}
-
-\begin{ganttchart}[vgrid={draw=none,draw=none},%
-            %today=15,%
-            %today offset=.5,%
-            %today label=Heute,%
-            %progress=today,%
-            time slot format=isodate
-            x unit=0.5cm,
-            y unit title=0.7cm,
-            y unit chart=0.8cm,
-            bar incomplete/.append style={fill=red},%
-            progress label text=  {\quad\pgfmathprintnumber[precision=0,verbatim]{#1}\%},
-            milestone label font=\tiny,
-            group label font=\tiny,
-            title label font=\tiny,
-            bar label node/.style={text width=3cm,align=right,font=\scriptsize\RaggedLeft,anchor=east},
-            milestone label node/.style={text width=2cm,align=right,font=\scriptsize\RaggedLeft,anchor=east},
-            group label node/.style={text width=3cm,align=right,font=\scriptsize\RaggedLeft,anchor=east}
-            ]{2020-05-25}{2020-09-30}
-
-    \gantttitle{Projektwochen}{2020-09-30} \\
-    \gantttitlelist{22,...,40}{1} \\
-    \ganttgroup{Projektplanung}{22}{40} \\
-    \ganttbar{Entwurf und Exposé}{2020-05-}{2} \\
-    \ganttlinkedbar{A2,3: Datensammelung und -Analyse, Literaturrecherche}{3}{5} \ganttnewline
-    \ganttnewline
-    \ganttlinkedmilestone{Abschluss Datensammlung und Literaturrecherche}{5} \\ 
-    \ganttnewline
-    \ganttlinkedbar{A4: Modell (SVM) aufbauen und realisieren}{6}{7} \ganttnewline
-    \ganttlinkedmilestone{SVM fertig}{7} \ganttnewline
-    \ganttlinkedbar{A5: Mehrere Modelle aufbauen und realisieren}{8}{9}\\
-    \ganttlinkedbar{Vorbereitung für Zwischsenpräsentation}{10}{10}\\
-    \ganttlinkedmilestone{Zwischsen-präsentation}{11}{11}\\
-    \ganttlinkedbar{A6: Neuronales Netzwerk realisieren}{12}{14}
-    \ganttnewline
-    \ganttlinkedmilestone{NN fertig}{14} \ganttnewline
-    \ganttlinkedbar{A7: Eigenes Neuronales Netzwerk aufbauen}{15}{16}\\
-    \ganttlinkedbar{A8: Auswertung und Dokumentation}{17}{17}\\
-    \ganttnewline
-    \ganttlinkedmilestone{Abschluss-präsentation und Projektabschluss}{18}{18}\\
-
-% \ganttlink{elem3}{elem5}
-% \ganttlink{elem4}{elem5}
-% \ganttlink{elem5}{elem6}
-\end{ganttchart}
 
 
 
