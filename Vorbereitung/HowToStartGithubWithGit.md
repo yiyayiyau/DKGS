@@ -28,7 +28,30 @@ Until now, you have all the same file with the others. Now, image that you have 
 5. Now, if you open you GitHub you will find the changed file test.txt is in your Github dkgs reponsitory. Click in the mittle left 	button "new pull request" and "Create pull Request"
 6. Than i will get the pull request and i will check it and add some discribtion about it. If i merge it, it will be added in my 		repository and next time if someone **pull** the reponsitory, he will also get the changed file.
 
+## Create neu Pull Request OR Update Fork 
+### Create neu Pull Request: Wenn du deine Änderung ins DKGS hochladen möchtest
+1. Öffnen Github and find the Fork Repo.
+2. Under "Code" klick "Neu pull Request"
+3. Prüfen "base repository" ist "yiyayiyau/DKGS" und "head repository" ist deine Fork. (default)
+4. Klick "Create pull request" und geben update informations sodass in die Zukunft du kannst erinnern was du gemacht hast
+//5. Klick "merge pull request"
+
+### Update Fork: Wenn anderen etwas hochgeladet und du deine Fork update möchtest
+1. Öffnen Github and find the Fork Repo.
+2. Under "Code" klick "Neu pull Request"
+3. Prüfen "base repository" ist deine Fork und "head repository" ist "yiyayiyau/DKGS"
+4. Klick "Create pull request" und geben update informations sodass in die Zukunft du kannst erinnern was du gemacht hast
+5. Klick "merge pull request"
 Until now, you can try on it and hopefully everything is ok for you.
+
+## Andere Möglichekeit: git 
+1. **git remote -v" Prüfen ob du yiyayiyau remote eingefügt hast.
+Wenn du keine remote mit den Link https://github.com/yiyayiyau/DKGS.git hast, dann:
+	* **git add yiyayiyau https://github.com/yiyayiyau/DKGS.git** 
+2. **git pull yiyayiyau master** update und merge in deine local. Das is wie die 2 Befehle zusammen: *git fetch yiyayiyau*  und  *git merge yiyayiyau/master*
+3. **git pull dkgs master** dkgs ist eine remote name, wenn du ein andere remotename hast, bitte dies anstatt. 
+4. **git push** update und merge in deine remote repository.
+
 
 
 In Gerneral hier is the moster useful commands right now:
@@ -38,6 +61,10 @@ In Gerneral hier is the moster useful commands right now:
 4. **git push dkgs master** 
 5. new pull request in Github
 Use **git add ...** you can add files and directory also.
+
+
+
+
 
 ## additional, add sub branch
 
@@ -98,5 +125,18 @@ So you need a sub branch. You can
 	最后
 	**git commit -a -m ...**
 
+https://backlog.com/git-tutorial/cn/stepup/stepup2_7.html
 
-
+删除文件 **git rm xxxx**
+移动文件 **git mv file.txt Vorbereitung/file.txt**
+解决冲突需要的命令 
+* git status
+* git stash
+* git stash apply
+返回以前版本需要的命令
+* git log
+* git reflog
+* git reset --hard xxxx
+查看所有文件
+git ls-files
+git add -u 自动找到修改的地方
