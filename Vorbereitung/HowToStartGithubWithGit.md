@@ -46,7 +46,28 @@ Until now, you can try on it and hopefully everything is ok for you.
 
 ## Other with git 
 ### Create neu Pull Request
-1. **git request-pull -p master yiyayiyau master** -p options, meaning show changes
+
+hub pull-request
+EXAMPLES:
+```git
+$ hub pull-request
+[ opens a text editor for writing title and message ]
+[ creates a pull request for the current branch ]
+
+$ hub pull-request --base OWNER:master --head MYUSER:my-branch
+[ creates a pull request with explicit base and head branches ]
+
+$ hub pull-request --browse -m "My title"
+[ creates a pull request with the given title and opens it in a browser ]
+
+$ hub pull-request -F - --edit < path/to/message-template.md
+[ further edit the title and message received on standard input ]
+```
+https://hub.github.com/hub-pull-request.1.html
+https://stackoverflow.com/questions/34945947/git-request-pull-how-to-create-a-github-pull-request-on-the-command-line
+https://codingnote.com/2018/01/04/git-request-pull/
+
+// not this one ! 1. **git request-pull -p master yiyayiyau master** -p options, meaning show changes
 
 https://git-scm.com/docs/git-request-pull
 
