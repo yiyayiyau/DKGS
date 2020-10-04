@@ -9,9 +9,9 @@
 	than enter y
 * create env. with python version 3.5: conda create --name xxxx python=3.5
 * create env. with python numpy and scipy: conda create --name xxxx python=3.5 numpy scipy
-* list all env.: conda info --envs
+* list all env.: conda info --
 	conda env list
-* get in a env. : activate xxxx
+* get in a env. : conda activate xxxx
 * exit a env.: deactivate
 * copy a env.: conda create --name newxxxx --clone oldxxxxxx
 * delete a env.: conda remove --name xxxx --all
